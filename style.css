@@ -1,0 +1,140 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    color: #f0e14a;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fdfad1;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: auto;
+}
+
+#app-container {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 0 0 8px #f0e14a, 0 0 0 16px #44281d, 0 0 0 24px #97ce4c;
+    border-image: linear-gradient(to right, #f0e14a, #44281d, #97ce4c) 1;
+    height: 800px;
+    width: 400px;
+    overflow: auto;
+    padding: 15px;
+    border-radius: 32px;
+    margin-top: 30px;
+    background-color: #f9c69f;
+}
+
+#gallery::-webkit-scrollbar {
+    width: 2px;
+    background-color: #f9c69f;
+}
+
+#gallery::-webkit-scrollbar-thumb {
+    background-color: #57685b;
+}
+
+#gallery>img {
+    height: 150px;
+    width: 150px;
+    border: solid;
+    border-width: 20px;
+    border-image: repeating-radial-gradient( circle at 10px, turquoise, pink 2px, greenyellow 4px, pink 2px) 1;
+}
+
+#gallery .gallery-img {
+    transition: transform 0.5s;
+}
+
+#gallery .gallery-img:hover {
+    transform: scale(1.1);
+}
+
+.shirts {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-shirt {
+    margin-top: 20px;
+    border: solid;
+    border-width: 20px;
+    border-image: repeating-radial-gradient( circle at 10px, turquoise, pink 2px, greenyellow 4px, pink 2px) 1;
+    height: 680px;
+    width: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#overlay-img {
+    height: 200px;
+    width: 200px;
+    transform: translate(230px, 190px);
+    background-position: center;
+    background-size: cover;
+    border-radius: 80px;
+    opacity: 97%;
+}
+
+#shirts-bar {
+    margin-left: 120px;
+    display: flex;
+    height: 150px;
+    width: 150px;
+}
+
+#shirts-bar .color1,
+#shirts-bar .color2,
+#shirts-bar .color3 {
+    transition: transform 0.5s;
+}
+
+#shirts-bar .color1:hover,
+#shirts-bar .color2:hover,
+#shirts-bar .color3:hover {
+    transform: scale(1.1);
+}
+
+.color1,
+.color2,
+.color3 {
+    height: 140px;
+    width: 140px;
+}
+
+#shirt1,
+#shirt2,
+#shirt3 {
+    height: 150px;
+    width: 150px;
+}
+
+#info-character {
+    box-shadow: 0 0 0 8px #f0e14a, 0 0 0 16px #f9c69f, 0 0 0 24px #97ce4c;
+    border-image: linear-gradient(to right, #f0e14a, #f9c69f, #97ce4c) 1;
+    margin-top: 30px;
+    background-color: #44281d;
+    padding: 30px;
+    border-radius: 32px;
+    height: 350px;
+    width: 250px;
+}
